@@ -13,7 +13,7 @@ default:
       database: DEV
       warehouse: TRANSFORMING_DEV
       schema: dbt_gboskovic
-      threads: 2
+      threads: 1
       client_session_keep_alive: False
 
   target: dev
