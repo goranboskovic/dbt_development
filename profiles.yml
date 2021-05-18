@@ -9,7 +9,7 @@ default:
       account: si19491.ca-central-1.aws
       user: gboskovic
       password: j4V2@LN2cVmncV8VUAeE6ztE
-      role: TRANSFORMER_DEV
+      role: sysadmin
       database: analytics
       warehouse: transforming
       schema: dbt_gboskovic
