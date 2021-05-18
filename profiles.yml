@@ -10,7 +10,7 @@ default:
       user: gboskovic
       password: j4V2@LN2cVmncV8VUAeE6ztE
       role: sysadmin
-      database: analytics
+      database: raw
       warehouse: transforming
       schema: dbt_gboskovic
       threads: 1
