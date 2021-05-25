@@ -1,3 +1,7 @@
+{{ config(
+    materialized="table"
+)}}
+
 select
   g.*
   , SPLIT_PART(g.path, '/', 1) as root_id
