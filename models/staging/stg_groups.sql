@@ -1,3 +1,7 @@
+{{ config(
+    materialized="table"
+    )
+}}
 with groups as ( 
     select
         ID

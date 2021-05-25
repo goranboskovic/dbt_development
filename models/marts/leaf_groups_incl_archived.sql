@@ -2,7 +2,7 @@ select
   g.*
   , SPLIT_PART(g.path, '/', 1) as root_id
 from
-  {{ ref('stg_groups') }}
+  {{ ref('stg_groups') }} as g
   left join {{ ref('stg_groups') }} as gc on
     g.id = gc.parent_id
     and gc.is_archived = 0 
