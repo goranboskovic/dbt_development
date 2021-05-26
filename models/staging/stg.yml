@@ -1,0 +1,15 @@
+version: 2 
+
+models: 
+    - name: stg_groups
+      columns: 
+        - name: id 
+          tests:
+            - unique 
+            - not_null 
+    - name: stg_users
+      columns: 
+        - name: role 
+          tests:
+            - accepted_values: 
+                values: ['manager', 'employee']
